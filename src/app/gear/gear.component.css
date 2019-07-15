@@ -1,0 +1,11 @@
+.gearCard {
+    display: inline-flex;
+    background-color: blanchedalmond;
+    color: darkslategray;
+    padding: 5px;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+}
