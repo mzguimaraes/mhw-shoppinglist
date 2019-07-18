@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GearComponent } from './gear.component';
+import { GearViewComponent } from './gear-view.component';
 
-describe('ItemComponent', () => {
-  let component: GearComponent;
-  let fixture: ComponentFixture<GearComponent>;
+describe('GearViewComponent', () => {
+  let component: GearViewComponent;
+  let fixture: ComponentFixture<GearViewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GearComponent ]
+      declarations: [ GearViewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GearComponent);
+    fixture = TestBed.createComponent(GearViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

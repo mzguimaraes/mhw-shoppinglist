@@ -1,0 +1,47 @@
+.gearCard {
+    background-color: blanchedalmond;
+    color: darkslategray;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.gearName {
+    font-size: 150%;
+    /* flex: 1 100%; */
+    padding: 10px;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.featuredSkill {
+    background-color: whitesmoke;
+    padding: 5px 5px;
+    border-radius: 4px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+}
+
+.skillPips {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    justify-content: left;
+}
+
+.skillPips .level {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px;
+    background-color: red;
+}
+
