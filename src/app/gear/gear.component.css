@@ -1,12 +1,16 @@
+/* TODO: fix sizing of featured skill */
 .gearCard {
     background-color: blanchedalmond;
     color: darkslategray;
-    padding: 5px;
+    padding: 5px 5px;
+    margin: 2px 2px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     border-radius: 4px;
+    width: 300px;
+    height: 100px;
 }
 
 .gearName {
@@ -21,8 +25,9 @@ img {
 
 .featuredSkill {
     background-color: whitesmoke;
-    padding: 5px 5px;
+    padding: 0px 5px;
     border-radius: 4px;
+    height: 100px;
     width: 100px;
     display: flex;
     flex-direction: column;
@@ -36,6 +41,7 @@ img {
     flex-direction: row;
     /* align-items: flex-start; */
     justify-content: left;
+    align-items: center;
 }
 
 .skillPips .level {
@@ -43,5 +49,6 @@ img {
     height: 20px;
     margin: 5px 5px;
     background-color: red;
+    border-radius: 2px;
 }
 

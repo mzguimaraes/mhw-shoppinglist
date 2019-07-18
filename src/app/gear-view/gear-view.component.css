@@ -1,0 +1,4 @@
+.gearView {
+    display: flex;
+    flex-direction: column;
+}
