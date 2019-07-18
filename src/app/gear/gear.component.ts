@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { GearService } from '../gear.service';
-import { Gear } from '../gear';
+import { Gear, GearFields } from '../gear';
 
 @Component({
   selector: 'app-gear',
@@ -15,6 +15,7 @@ export class GearComponent implements OnInit {
   state = this.STATES.UNINIT;
 
   gear: Gear;
+  featuredSkill: GearFields.Skill;
 
   @Input() id: number;
 
@@ -37,8 +38,13 @@ export class GearComponent implements OnInit {
         .subscribe( gear => {
           console.log("obtained gear with id", gear.id);
           this.gear = gear;
+          this.featuredSkill = this.gear.skills[0];
         });
     }
+  }
+
+  setFeaturedSkill(skillName: string) {
+    let matchedSkill = this.gear.skills.find((el) => el.skillName === skillName);    
   }
 
 }

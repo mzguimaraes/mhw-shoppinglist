@@ -1,12 +1,12 @@
-declare module GearFields {
+export module GearFields {
 
-    export interface Defense {
+    export class Defense {
         base: number;
         max: number;
         augmented: number;
     }
 
-    export interface Resistances {
+    export class Resistances {
         fire: number;
         water: number;
         ice: number;
@@ -14,14 +14,14 @@ declare module GearFields {
         dragon: number;
     }
 
-    export interface Attributes {
+    export class Attributes {
     }
 
-    export interface Modifiers {
+    export class Modifiers {
         affinity: number;
     }
 
-    export interface Skill {
+    export class Skill {
         id: number;
         level: number;
         description: string;
@@ -30,7 +30,7 @@ declare module GearFields {
         skillName: string;
     }
 
-    export interface ArmorSet {
+    export class ArmorSet {
         id: number;
         name: string;
         rank: string;
@@ -38,12 +38,12 @@ declare module GearFields {
         bonus: number;
     }
 
-    export interface Assets {
+    export class Assets {
         imageMale: string;
         imageFemale: string;
     }
 
-    export interface Item {
+    export class Item {
         id: number;
         name: string;
         description: string;
@@ -52,12 +52,12 @@ declare module GearFields {
         value: number;
     }
 
-    export interface Material {
+    export class Material {
         quantity: number;
         item: Item;
     }
 
-    export interface Crafting {
+    export class Crafting {
         materials: Material[];
     }
 

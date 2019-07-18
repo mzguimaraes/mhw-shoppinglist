@@ -1,4 +1,14 @@
 <div class="gearCard" *ngIf="gear">
     <img src="{{gear.assets.imageMale}}" alt="{{gear.name}}">
-    <p>Name: {{gear.name}}</p>
+    <p class="gearName">{{gear.name}}</p>
+    <!-- <div *ngFor="i of Array({{featuredSkill.level}})">doot</div> -->
+    <div class="featuredSkill">
+        <!-- <label for="featuredSkill">{{featuredSkill.skillName}}</label> -->
+        <p>{{featuredSkill.skillName}}</p>
+        <div class="skillPips">
+            <div class="level 1" *ngIf="featuredSkill.level > 0"></div>
+            <div class="level 2" *ngIf="featuredSkill.level > 1"></div>
+            <div class="level 3" *ngIf="featuredSkill.level > 2"></div>
+        </div>
+    </div>
 </div>
