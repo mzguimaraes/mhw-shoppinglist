@@ -39,7 +39,7 @@ export class SearchComponent implements OnInit {
       switchMap((term: string) => {
         if (term)
           return this.gearService.searchByName(term)
-        else return of ([]);
+        else return of([]);
       }),
     );
   }
