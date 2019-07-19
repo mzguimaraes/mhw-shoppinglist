@@ -1,3 +1,3 @@
 <div class="gearView">
-    <app-gear *ngFor="let id of gearIds" [id]=id></app-gear>
+    <app-gear *ngFor="let id of gearIds$ | async" [id]=id></app-gear>
 </div>
